@@ -2,6 +2,14 @@ var express = require('express');
 
 var app = express();
 
+var app = express();
+
+// set up handlebars view engine
+var handlebars = require('handlebars')
+        .create({ defaultLayout:'main' });
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
+
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', function(req, res){
