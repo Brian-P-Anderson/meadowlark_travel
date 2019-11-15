@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Brian-P-Anderson/meadowlark_travel#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "handlebars": "^4.5.2"
   }
 }
